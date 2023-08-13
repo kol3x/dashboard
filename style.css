@@ -1,0 +1,99 @@
+:root {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+img {
+  width: 0.8em;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 8fr;
+  gap: 20px;
+  background-color: #ecfccb;
+  font-size: 1.05em;
+}
+
+.sidebar {
+  box-shadow: 2px 2px 2px 3px #bef264;  
+  background: rgb(101,163,13);
+  background: linear-gradient(rgba(101,163,13,1) 0%, rgba(190,242,100,1) 100%); 
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-row: 1 / -1;
+}
+
+.logo {
+  letter-spacing: 0.5em;
+  justify-self: center;
+  padding: 5px;
+  margin-top: 1em;
+  font-size: 1.8rem;
+  box-shadow: 2px 2px 2px 3px green;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.5em;
+  display:grid;
+  align-content: start;
+  gap: 10px;
+}
+
+li {
+}
+
+.second-menu {
+  margin-top: 2em;
+}
+
+header {
+  grid-column: 2;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 70px 1fr 1fr;
+  gap: 20px;
+  background: rgb(190,242,100);
+  background: linear-gradient(180deg, rgba(190,242,100,1) 0%, rgba(217,249,157,0.8645658947172619) 100%); 
+}
+
+.projects {
+  grid-row: 2 / -1;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.announcements {
+  grid-row: 2;
+  box-shadow: 2px 2px 2px 3px green;
+  padding: 15px;
+}
+
+.trending {
+  padding: 15px;
+  grid-row: 3;
+  box-shadow: 2px 2px 2px 3px green;
+}
+
+h4 {
+  margin-left: 50px;
+  font-size: 1.5em;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.card {
+  margin: 15px;
+  padding: 15px;;
+  box-shadow: 2px 2px 2px 3px green;
+}
